@@ -876,6 +876,7 @@ textarea {
   }
   .head {
     padding: 2rem;
+    padding-top: 4px;
     flex-direction: column;
     justify-content: space-between;
   }
