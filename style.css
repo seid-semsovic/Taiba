@@ -560,6 +560,7 @@ textarea {
   text-align: center;
   justify-content: space-between;
   background: #e06100;
+  align-items: center;
 }
 
 .copyright i {
