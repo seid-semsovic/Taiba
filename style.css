@@ -216,7 +216,9 @@ section p {
 #txt {
   font-size: 50px;
 }
-
+#text {
+  font-size: 100px;
+}
 .home-content {
   display: grid;
   grid-template-columns: 1.2fr 1.2fr;
