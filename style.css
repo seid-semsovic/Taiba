@@ -96,7 +96,17 @@ section h4 {
   );
   background: var(--clr4);
 }
-
+.text {
+  font-size: 15px;
+}
+.other {
+  position: relative;
+  bottom: 50px;
+}
+.pizza-menu {
+  position: relative;
+  bottom: 30px;
+}
 section h2 {
   padding: 2rem 0;
   font-size: 2rem;
