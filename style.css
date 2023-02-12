@@ -515,7 +515,9 @@ section p {
   text-transform: capitalize;
   color: #aaa;
 }
-
+.p-bro {
+  font-size: 100px;
+}
 .contact-inner-col input,
 .contact-inner-col textarea {
   width: 80%;
