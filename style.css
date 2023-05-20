@@ -574,6 +574,7 @@ textarea {
   justify-content: space-between;
   background: #e06100;
   align-items: center;
+  font-size: 20px;
 }
 
 .copyright i {
@@ -592,6 +593,9 @@ textarea {
   background: var(--clr4);
   color: var(--clr2);
   font-size: 25px;
+}
+.copyright a {
+  color: #000;
 }
 
 .social i:hover {
