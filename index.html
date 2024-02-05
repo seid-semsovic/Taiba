@@ -1,654 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Taiba Website</title>
-  </head>
-  <body>
-    <header class="head">
-      <h1>Pizzeria&nbsp;<i class="fas fa-pizza-slice"></i>&nbsp;Taiba</h1>
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Contact</a>
-        
-      </nav>
-    </header>
-
-    <!-------------------------------------Home Section------------------------------------------>
-    <section class="home" id="home">
-      <div class="home-content">
-        <div class="inner-content">
-          <h3 id="txt">
-            Welcome to Pizzeria&nbsp;
-            <i class="fas fa-pizza-slice"></i>&nbsp;Taiba
-          </h3>
-         <strong><p class="text">
-            Taiba, a family-owned pizzeria that has been serving
-            delicious and authentic best pizzas in Town for years. Our pizzas are
-            made with only the freshest and finest ingredients, and our secret
-            recipe dough is what sets us apart from the rest.
-          </p></strong> 
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>TAIBA PIZZERIA - The Best in Town - Novi Pazar</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('https://source.unsplash.com/featured/?pizza') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(8px);
+        }
+        main, nav, footer {
+            position: relative;
+            z-index: 10;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 90%;
+            height: auto;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        .contact-info {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            max-width: 600px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            padding: 1rem 0;
+            width: 100%;
+            margin-top: 2rem;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+<div class="background"></div>
+    <nav class="container-fluid" style="padding-top: 5px;">
+        <ul><li><strong>TAIBA</strong></li></ul>
+        <ul><li><a href="#contact" role="button">Kontakt</a></li></ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <figure>
+                    <img src="taiba1.png" alt="Meni 1" />
+                </figure>
+                <figure>
+                    <img src="taiba2.png" alt="Meni 2" />
+                </figure>
+                <div class="contact-info" id="contact" style="color: black;">
+                    <h2 style="color: black;">Kontakt</h2>
+                    <p style="color: black;">Broj telefona: +381 63 668 620</p>
+                    <p style="color: black;">Adresa: Veljka Vlahovića<br>preko puta stadiona</p>
+                </div>
+            </section>
         </div>
-        <div class="inner-content-img">
-          <img src="" alt="" />
-        </div>
-      </div>
-    </section>
-  </body>
-  <div style="margin: 80px 0; padding: 20px" id="menu">
-    <h1 class="pizza-menu" style="text-align: center; font-size: 40px">Pizza Menu</h1>
-    <!----------------------------------PIZZA MENU MOBILE------------------------------------------------>
-    <div class="pizza-carousel-mobile">
-      <div class="in-box">
-        <img src="Photos/image_taiba-box.JPG" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Taiba BOX</h2>
-            <p>
-              (riblji stapići, onion rings, piletina sa susamom i prezlom, domaći krompiri, pomfrit, pizza funghi)
-            </p>
-            <div class="price">2.300 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/vegeteriana-pizza.jpg" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Vegeteriana Pizza</h2>
-            28/32cm <br />
-            <p>(pelat, trapist, povrće)</p>
-            <div class="price">420/550 rsd</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="in-box">
-        <img src="images/PhotoRoom-20230611_141406.png" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Chicken Pizza</h2>
-            <p>
-              28/32cm <br />
-              (pelat, trapist, piletina, pečurke, kukuruz)
-            </p>
-            <div class="price">420/550 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/taiba-pizza.jpg" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Taiba Pizza</h2>
-            <p>
-              28/32cm <br />
-              (pelat, trapist, povrće, pečurke)
-            </p>
-            <div class="price">450/550 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/image_6483441 (3).JPG" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Pizza Capriciossa</h2>
-            <p>
-              28/32cm<br />
-              (pelat, trapist, pršuta, pečurke)
-            </p>
-            <div class="price">420/550 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/Margarita.jpg" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Pizza Margherita</h2>
-            <p>
-              28/32cm<br />
-              (pelat, trapist)
-            </p>
-            <div class="price">350/450 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/tuna-pizza.JPG" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Pizza Tuna</h2>
-            <p>
-              28/32<br />
-              (pelat, trapist, tuna)
-            </p>
-            <div class="price">420/550 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="Photos/kinder.JPG" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Pizza Kinder Bueno</h2>
-            <p>
-              (podloga, nutela-krem, kinder, banana, nar)
-            </p>
-            <div class="price">500 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <video width="320" height="240" controls>
-          <source src="Photos/Video2.MP4" type="video/mp4">
-          <source src="Photos/Video2.MP4" type="video/ogg">
-        </video>
-        <div class="in-content">
-          <div class="star">
-            <h2>The Best Pizza in town</h2>
-                <strong><p>Welcome</p></strong>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    <!----------------------------------Pizza MENU PC---------------------------------------------------->
-    <div class="pizza-carousel">
-      <div class="pizza-carousel-inner">
-        <input
-          class="pizza-carousel-open"
-          type="radio"
-          id="pizza-carousel-1"
-          name="pizza-carousel"
-          aria-hidden="true"
-          hidden=""
-          checked="checked"
-        />
-        <div class="pizza-carousel-item">
-          <div class="in-box">
-            <img src="images/vegeteriana-pizza.jpg" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Vegeteriana Pizza</h2>
-                <p>
-                  28/32cm <br />
-                  (pelat, trapist, povrce)
-                </p>
-                <div class="price">420/550rsd</div>
-              </div>
-            </div>
-          </div>
-          <div class="in-box">
-            <img src="images/chicken-pizza.JPG" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Chicken Pizza</h2>
-                <p>
-                 28/32cm <br />
-                  (pelat, trapist, piletina, pečurke, kukuruz)
-                </p>
-                <div class="price">420/550 rsd</div>
-              </div>
-            </div>
-          </div>
-          <div class="in-box">
-            <img src="images/taiba-pizza.jpg" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Taiba Pizza</h2>
-                <p>
-                  28/32cm <br />
-                  (pelat, trapist, pršuta, povrće)
-                </p>
-                <div class="price">450/550 rsd</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <input
-          class="pizza-carousel-open"
-          type="radio"
-          id="pizza-carousel-2"
-          name="pizza-carousel"
-          aria-hidden="true"
-          hidden=""
-        />
-        <div class="pizza-carousel-item">
-          <div class="in-box">
-            <img src="images/image_6483441 (3).JPG" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Pizza Capriciossa</h2>
-                <p>
-                  28/32cm<br />
-                  (pelat, trapist, pršuta, pečurke)
-                </p>
-                <div class="price">420/550 rsd</div>
-              </div>
-            </div>
-          </div>
-          <div class="in-box">
-            <img src="images/Margarita.jpg" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Pizza Margherita</h2>
-                <p>
-                  28/32cm<br />
-                  (pelat, trapist)
-                </p>
-                <div class="price">350/450rsd</div>
-              </div>
-            </div>
-          </div>
-          <div class="in-box">
-            <img src="images/tuna-pizza.JPG" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Pizza Tuna</h2>
-                <p>
-                  28/32<br />
-                  (pelat, trapist, tuna)
-                </p>
-                <div class="price">420/550rsd</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <input
-          class="pizza-carousel-open"
-          type="radio"
-          id="pizza-carousel-3"
-          name="pizza-carousel"
-          aria-hidden="true"
-          hidden=""
-        />
-        <div class="pizza-carousel-item">
-          <div class="in-box">
-            <img src="Photos/Pide.JPG" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Turkish Pide</h2>
-                <p>
-                  (podloga, trapist, turski sudzuk, kukuruz)
-                </p>
-                <div class="price">450 rsd</div>
-              </div>
-            </div>
-          </div>
-          <div class="in-box">
-            <img src="Photos/image_taiba-box.JPG" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Taiba BOX</h2>
-                <p>
-                  (riblji stapići, onion rings, piletina, domaći krompiri, pomfrit, pizza funghi)
-                </p>
-                <div class="price">2.300 rsd</div>
-              </div>
-            </div>
-          </div>
-          <div class="in-box">
-            <img src="Photos/kinder.JPG" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Pizza Kinder Bueno</h2>
-                <p>
-                  (podloga, nutela-krem, kinder, banana, nar)
-                </p>
-                <div class="price">500 rsd</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <label
-          for="pizza-carousel-3"
-          class="pizza-carousel-control prev control-1"
-          >‹</label
-        >
-        <label
-          for="pizza-carousel-2"
-          class="pizza-carousel-control next control-1"
-          >›</label
-        >
-        <label
-          for="pizza-carousel-1"
-          class="pizza-carousel-control prev control-2"
-          >‹</label
-        >
-        <label
-          for="pizza-carousel-3"
-          class="pizza-carousel-control next control-2"
-          >›</label
-        >
-        <label
-          for="pizza-carousel-2"
-          class="pizza-carousel-control prev control-3"
-          >‹</label
-        >
-        <label
-          for="pizza-carousel-1"
-          class="pizza-carousel-control next control-3"
-          >›</label
-        >
-        <ol class="pizza-carousel-indicators">
-          <li>
-            <label for="pizza-carousel-1" class="pizza-carousel-bullet"
-              >•</label
-            >
-          </li>
-          <li>
-            <label for="pizza-carousel-2" class="pizza-carousel-bullet"
-              >•</label
-            >
-          </li>
-          <li>
-            <label for="pizza-carousel-3" class="pizza-carousel-bullet"
-              >•</label
-            >
-          </li>
-        </ol>
-      </div>
-    </div>
-   
-  </div>
-
-
-  <div style="margin: 80px 0; padding: 20px">
-    <h1 class="other" style="text-align: center; font-size: 40px">Other</h1>
-   <!----------------------------------Mobile Other------------------------------------------------------->
-    <div class="carousel-mobile">
-      
-      <div class="in-box">
-        <img src="images/funghisos.jpg" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Piletina u funghi sosu</h2>
-         
-            <div class="price">460 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/zar.jpg" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Piletina na žaru</h2>
-         
-            <div class="price">460 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/batak.jpg" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Pileci batak</h2>
-         
-            <div class="price">500 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/image_6483441 (4).JPG" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Rolovana piletina</h2>
-            <p>
-          (trapist, seckana piletina, sos)
-              
-            </p>
-            <div class="price">350 rsd</div>
-          </div>
-        </div>
-      </div>
-   
-      <div class="in-box">
-        <img src="images/belo-meso.jpg" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Belo Meso</h2>
-            <p>
-              (pavlaka, trapist, seckana piletina)
-            </p>
-            <div class="price">300 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/Turkish-s.jpg" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Turkish Sandwich</h2>
-            <p>(tartar sos, trapist, turski sudzuk, salata)</p>
-            <div class="price">300 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/taiba-s.jpg" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Taiba Sandwich</h2>
-            <p>(parmezano sos, trapist, seckana piletina, salate )</p>
-            <div class="price">300 rsd</div>
-          </div>
-        </div>
-      </div>
-      <div class="in-box">
-        <img src="images/cheese-s.JPG" alt="img" />
-        <div class="in-content">
-          <div class="star">
-            <h2>Cheese Sandwich</h2>
-            <p>
-              
-              (3 vrste sira, prsuta, sudzuk, paradajz, salata)
-            </p>
-            <div class="price">300 rsd</div>
-          </div>
-        </div>
-      </div>
- 
-    
-      <div class="in-box">
-        <video width="320" height="240" controls>
-          <source src="Photos/video3.MOV" type="video/mp4">
-          <source src="Photos/video3.MOV" type="video/ogg">
-        </video>
-        <div class="in-content">
-          <div class="star">
-            <h2>Juicy And Delicious</h2>
-            <p>
-              Taiba 🍕Taiba 🍕the place to be. For pizza lovers, come and see
-Fresh ingredients, cooked to perfection Satisfy your cravings, no exception. 🍕
-            </p>
-            
-          </div>
-        </div>
-      </div>
-     
-      
-
-    </div>
-    <div class="carousel">
-      <div class="carousel-inner">
-        <input
-          class="carousel-open"
-          type="radio"
-          id="carousel-1"
-          name="carousel"
-          aria-hidden="true"
-          hidden=""
-          checked="checked"
-        />
-        <!-----------------------------------Other PC-------------------------------------------------->
-        
-        <div class="carousel-item">
-          <div class="in-box">
-            <img src="images/taiba-s.jpg" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Taiba Sandwich</h2>
-                <p>
-                  (parmezano sos, seckana piletina, trapist, salate)
-                </p>
-                <div class="price">300 rsd</div>
-              </div>
-            </div>
-          </div>
-          <div class="in-box">
-            <img src="images/Turkish-s.jpg" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Turkish Sandwich</h2>
-                <p>
-                 (tartar sos, turski sudzuk, trapist, salata)
-                </p>
-                <div class="price">300 rsd</div>
-              </div>
-            </div>
-          </div>
-          <div class="in-box">
-            <img src="images/cheese-s.JPG" alt="img" />
-            <div class="in-content">
-              <div class="star">
-                <h2>Cheese Sandwich</h2>
-                <p>
-                  (tri vrste sira, parsuta, sudzuk, sosevi)
-                </p>
-                <div class="price">300 rsd</div>
-              </div>
-            </div>
-          </div>
-          <!---->
-          
-        </div>
-  <!------>
-  
-        
-        <input
-          class="carousel-open"
-          type="radio"
-          id="carousel-2"
-          name="carousel"
-          aria-hidden="true"
-          hidden=""
-        />
-        <!--(?)-->
-        <div class="carousel-item">
-          
-          </div>
-        </div>
-
-        <input
-          class="carousel-open"
-          type="radio"
-          id="carousel-3"
-          name="carousel"
-          aria-hidden="true"
-          hidden=""
-        />
-        <!--(OTHER PC)----------------------- for future updates--------------------->
-        <div class="carousel-item">
-        
-          </div>
-       
-        </div>
-        <label for="carousel-3" class="carousel-control prev control-1"
-          >‹</label
-        >
-        <label for="carousel-2" class="carousel-control next control-1"
-          >›</label
-        >
-        <label for="carousel-1" class="carousel-control prev control-2"
-          >‹</label
-        >
-        <label for="carousel-3" class="carousel-control next control-2"
-          >›</label
-        >
-        <label for="carousel-2" class="carousel-control prev control-3"
-          >‹</label
-        >
-        <label for="carousel-1" class="carousel-control next control-3"
-          >›</label
-        >
-        <!-- <ol class="carousel-indicators">
-          <li>
-            <label for="carousel-1" class="carousel-bullet">•</label>
-          </li>
-          <li>
-            <label for="carousel-2" class="carousel-bullet">•</label>
-          </li>
-          <li>
-            <label for="carousel-3" class="carousel-bullet">•</label>
-          </li>
-        </ol> -->
-      </div>
-    </div>
-  </div>
-
-  <!------------------------------------Contact Section------------------------->
-  <footer class="contact" id="contact">
-    <div class="content-sec">
-      <div class="contact-inner">
-        <div class="contact-inner-col">
-          <img src="images/taiba.jpg" alt="img" class="image" />
-        </div>
-        <div class="contact-inner-col" style="padding: 0px 10px; height: 60%">
-          <h1>Contact Us&nbsp;<i class="fas fa-paper-plane"></i></h1>
-          <h2>City: Novi Pazar</h2>
-          <h2>Street: Veljka Vlahovica 12</h2>
-          <h2><a class="p-broj" href="tel:063/668-620">Phone: 063/668-620</a></h2>
-         <!-- <h2>Phone: 063/668-620</h2> -->
-        </div>
-      </div>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.626635153304!2d20.51368971593019!3d43.13336897914255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47562805554537b3%3A0xb5aa6fcab43e1bf3!2sPizzeria%20Taiba!5e0!3m2!1ssr!2srs!4v1664058611210!5m2!1ssr!2srs"
-          width="100%"
-          height="100%"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <div class="copyright">
-        <p>Powered by &copy;<a href="https://twitter.com/SeidSemsovic">Seid Šemsović</a> </p>
-        <div class="social">
-          <a href="https://www.facebook.com/picerija.taiba?mibextid=LQQJ4d">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com/pizzeriataiba/">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!----------------JavaScript------------->
-  <script src="script.js">
-    // let searchbtn = document.querySelector("#search");
-    // let searchfrm = document.querySelector(".head .search-bar");
-
-    // searchbtn.onclick = () => {
-    //   searchfrm.classList.toggle("active");
-    //   menu.classList.remove("active");
-    // };
-    // let menu = document.querySelector(".head .navbar");
-
-    // document.querySelector("#bars").onclick = () => {
-    //   menu.classList.toggle("active");
-    //   searchfrm.classList.remove("active");
-    // };
-  </script>
+    </main>
+    <footer>
+        <small>Sva prava zadržana <a href="https://www.instagram.com/pizzeriataiba/">TAIBA PIZZERIA</a> 2024</small>
+    </footer>
+</body>
 </html>
